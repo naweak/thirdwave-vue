@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans:400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+body {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 265px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+#status
+{
+  margin:10px;
+  padding:10px;
+  position: fixed;
+  right:10px;
+  top:10px;
+  z-index: 100500;
+}
+.statusBlock
+{
+  margin:10px;
+  padding:10px;
+  border-radius:1px;
+  color: #0071ff;
+  background-color: #8ac5ff;
+  display: none;
+}
+.error
+{
+  color: #db2a19;
+  background: #ffb39d;
+}
+.success
+{
+  color: #008000;
+  background: #9eff86;
+}
+.formColumn {
+  margin: 10px;
+}
+a {
+  color:#330;
+}
+a:hover
+{
+  color:#699;
+}
+button {
+  background:#FFCC00;
+  border:1px solid #FF9900;
+  font-family: "Playfair Display", serif;
+  margin: 10px;
+  font-size: 1em;
+  color: #000000;
+}
+.irony {
+  color: #cc3333;
+}
