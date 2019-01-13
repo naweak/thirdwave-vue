@@ -21,4 +21,6 @@ npm run dev
 npm run build
 ```
 
-3. Расположить в корне своего веб-сервера и [настроить так, чтобы vue-router работал корректно](https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations)
+3. Скопировать `src/config.example.js` в `src/config.js` и отредактировать под свои нужды
+
+4. Расположить в корне своего веб-сервера и [настроить так, чтобы vue-router работал корректно](https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations)
