@@ -17,6 +17,9 @@ import Forbidden from './views/Forbidden.vue'
 import Logout from './views/Logout.vue'
 import Register from './views/Register.vue'
 import VueProgressBar from 'vue-progressbar'
+import SubPage from './views/Sub.vue'
+import Moment from 'vue-moment'
+import Post from './Post.vue'
 
 window.Config = Config
 window.$ = $
@@ -37,6 +40,7 @@ const options = {
   inverse: false
 }
 Vue.use(VueProgressBar, options)
+Vue.use(Moment)
 
 Vue.component('not-found', NotFound)
 Vue.component('error', Error)
@@ -44,6 +48,7 @@ Vue.component('main-menu', Menu)
 Vue.component('app-content', AppContent)
 Vue.component('status', Status)
 Vue.component('forbidden', Forbidden)
+Vue.component('post', Post)
 
 Vue.prototype.$status = function(msg, type = "info", notHide = !1) {
   var icon;
@@ -105,6 +110,10 @@ const routes = [
   {
     path: "/register/:inviteCode?",
     component: Register
+  },
+  {
+    path: "/sub/:address/:page?",
+    component: SubPage
   }
 ]
 

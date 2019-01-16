@@ -1,15 +1,17 @@
 <template>
-	<div id="main">
 
-  </div>
 </template>
 
 <script>
 	export default {
 		name: "main-page",
-    data () {
-		  return {
-		    hello: "tets"
+    created () {
+      if(this.$root.isLogged) {
+        this.$router.push('/sub/main')
+      }
+      else {
+        this.$router.push('/login')
+        this.$Progress.fail()
       }
     }
 	}

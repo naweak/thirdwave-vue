@@ -62,4 +62,49 @@ button {
 }
 .irony {
   color: #cc3333;
+  font-style: italic;
+}
+.username {
+  color: #810;
+}
+.autograph {
+  color: gray;
+  font-size: 80%;
+  background: #f2f2f2;
+  padding: 10px;
+  display: inline-block !important;
+  border-radius: 3px;
+}
+.post, .comment {
+  margin: 7px;
+  padding: 7px;
+}
+.post > .text, .comment > .text {
+  overflow: auto;
+}
+#pagination {
+  overflow: auto;
+  padding: 20px;
+}
+#pagination > table > tbody > tr > td > .router-link-exact-active {
+  padding: 4px;
+  background: #333;
+  color: white;
+}
+#pagination > table > tbody > tr > td > a {
+  text-decoration: none;
+  padding: 4px;
+  margin: 5px;
+}
+#pagination > table > tbody > tr > td > a:hover {
+  background-color: #810;
+  color: white;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+textarea {
+  width: 500px;
+  height: 150px;
 }
