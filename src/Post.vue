@@ -1,5 +1,8 @@
 <template>
   <div class="post">
+    <div id="fromSub" v-if="showFromSub">
+      <h2><router-link :to="'/sub/' + post.sub">{{ getSubTitle(post.sub) }}</router-link></h2>
+    </div>
     <div class="text" v-html='post.post_text'></div>
     <div class="autograph">
       <span class="username">{{post.author}}</span> написал этот псто {{Number(post['create_time']) * 1000 | moment($root.config.date)}}, <router-link :to="post.link">#{{post.id}}</router-link>
@@ -10,9 +13,33 @@
 <script>
 export default {
   name: "post",
-  props: ['post'],
+  props: ['post', 'showFromSub'],
   created () {
     this.post.link = `/comments/${this.post.id}`
+  },
+  methods: {
+    getSubTitle(sub) {
+      var that = this
+      var vm = that.$root
+      $.ajax({
+        url: vm.config.api,
+        async: false,
+        data: {
+          method: "sub.info",
+          address: sub,
+          access_token: $cookies.get('access_token')
+        },
+        success (data) {
+          if(data.success) {
+            window.subInfo = data.success
+          }
+          else {
+            vm.$status(data.error, 'error')
+          }
+        }
+      })
+      return subInfo.name
+    }
   }
 }
 </script>

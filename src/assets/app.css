@@ -108,3 +108,7 @@ textarea {
   width: 500px;
   height: 150px;
 }
+hr {
+  border: 0.5px solid gray;
+  opacity: 0.5;
+}
