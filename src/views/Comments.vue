@@ -104,6 +104,7 @@ export default {
       $.ajax({
         url: vm.config.api,
         async: false,
+        type: "post",
         data: {
           method: 'comment.create',
           text: that.commentText,

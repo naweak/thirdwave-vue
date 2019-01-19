@@ -175,6 +175,7 @@ export default {
       $.ajax({
         url: vm.config.api,
         async: false,
+        type: "post",
         data: {
           method: "post.create",
           text: that.postText,
