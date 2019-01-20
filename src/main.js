@@ -22,6 +22,7 @@ import Moment from 'vue-moment'
 import Post from './Post.vue'
 import Comments from './views/Comments.vue'
 import Comment from './Comment.vue'
+import CreateSubPage from './views/CreateSubPage.vue'
 
 window.Config = Config
 window.$ = $
@@ -122,6 +123,10 @@ const routes = [
     path: "/comments/:postId",
     component: Comments
   },
+  {
+    path: "/createSubPage",
+    component: CreateSubPage
+  }
 ]
 
 const router = new VueRouter({

@@ -20,6 +20,10 @@
 		    menu: {
 		      forLogged: [
             {
+              link: "/createSubPage",
+              html: "<i class='fa fa-plus'></i> Создать раздел"
+            },
+            {
               link: "/logout",
               html: "<i class=\"fa fa-sign-out\"></i> Выйти"
             }
