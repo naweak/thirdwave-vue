@@ -124,3 +124,6 @@ hr {
   color: #09B7E1;
   font-family: 'Courier New', Courier, mono
 }
+#postInfo .post {
+  padding: 0 !important;
+}
