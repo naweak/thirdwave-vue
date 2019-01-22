@@ -202,6 +202,10 @@ export default {
   watch: {
     '$route'() {
       this.loadSub()
+    },
+    '$route.params.page'() {
+      this.next.currentPage = Number(this.$route.params.page)
+      this.next.posts = []
     }
   }
 }
