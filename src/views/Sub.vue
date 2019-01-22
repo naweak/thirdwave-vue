@@ -132,7 +132,7 @@ export default {
           access_token: $cookies.get('access_token')
         },
         success (data) {
-          if(data.success) {
+          if(data.success || data.success === 0) {
             that.maxPages = data.success
           }
           else {
