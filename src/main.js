@@ -23,6 +23,7 @@ import Post from './Post.vue'
 import Comments from './views/Comments.vue'
 import Comment from './Comment.vue'
 import CreateSubPage from './views/CreateSubPage.vue'
+import SubList from './views/SubList.vue'
 
 window.Config = Config
 window.$ = $
@@ -126,6 +127,10 @@ const routes = [
   {
     path: "/createSubPage",
     component: CreateSubPage
+  },
+  {
+    path: "/subList",
+    component: SubList
   }
 ]
 

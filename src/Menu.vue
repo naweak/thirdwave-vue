@@ -24,6 +24,10 @@
               html: "<i class='fa fa-plus'></i> Создать раздел"
             },
             {
+              link: "/subList",
+              html: "<i class=\"fa fa-list\"></i> Все разделы"
+            },
+            {
               link: "/logout",
               html: "<i class=\"fa fa-sign-out\"></i> Выйти"
             }
