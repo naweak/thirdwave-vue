@@ -1,5 +1,5 @@
 <template>
-  <div id="createSubPage">
+  <div id="createSubPage" v-if="$root.isLogged">
     <div class="hello">
       <p>Прежде чем создать раздел:</p>
 			<ul>
@@ -22,6 +22,9 @@
       </div>
     </form>
   </div>
+  <forbidden
+    v-else
+    reason="Не залогинен"></forbidden>
 </template>
 
 <script>
