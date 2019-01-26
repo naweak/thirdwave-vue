@@ -79,7 +79,7 @@ button {
   margin: 7px;
   padding: 7px;
 }
-.post > .text, .comment > .text {
+.post > .text, .comment > .commentContent > .text {
   overflow: auto;
 }
 #pagination {
