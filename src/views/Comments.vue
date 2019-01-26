@@ -97,6 +97,7 @@ export default {
     loadCommentsPage() {
       this.loadPost()
       this.loadComments()
+      this.$title(`Комментарии к посту #${this.post.id}`)
     },
     submitComment () {
       var that = this

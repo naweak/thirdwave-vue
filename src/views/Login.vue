@@ -43,10 +43,13 @@
           }
         })
       }
+    },
+    created () {
+      this.$title('Логин')
     }
 	}
 </script>
 
 <style scoped>
-  
+
 </style>

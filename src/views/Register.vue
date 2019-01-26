@@ -50,6 +50,9 @@ export default {
         }
       })
     }
+  },
+  created () {
+    this.$title('Регистрация')
   }
 }
 </script>

@@ -39,6 +39,7 @@ export default {
   },
   created () {
     this.loadSubList()
+    this.$title('Разлелы')
   }
 }
 </script>

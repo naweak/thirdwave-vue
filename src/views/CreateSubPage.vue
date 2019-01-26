@@ -62,6 +62,9 @@ export default {
         }
       })
     }
+  },
+  created () {
+    this.$title("Создать раздел")
   }
 }
 </script>

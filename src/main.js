@@ -187,5 +187,12 @@ function onresize () {
   }
 }
 
+function setTitle (title) {
+  var titleEl = document.getElementsByTagName('title')[0]
+  titleEl.innerText = title
+}
+
+Vue.prototype.$title = setTitle
+
 window.onresize = onresize
 window.onresize()

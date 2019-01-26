@@ -88,6 +88,7 @@ export default {
         success (data) {
           if(data.success) {
             that.sub = data.success
+            that.$title(that.sub.name)
           }
           else {
             vm.$status(data.error, 'error')

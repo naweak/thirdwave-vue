@@ -11,6 +11,7 @@
     props: ['code', 'reason'],
     created () {
       this.$Progress.fail()
+      this.$title(`Ошибка: ${this.code}: ${this.reason}`)
     }
   }
 </script>
