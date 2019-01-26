@@ -1,13 +1,15 @@
 <template>
 	<div id="menu">
     <div id="toggleMenu" v-on:click="toggleMenu()"><i class="fa fa-bars"></i></div>
-    <div id="items" v-show="show">
-      <ul>
-        <li v-for="item in menu.forAll"><router-link :to="item.link" v-html="item.html"></router-link></li>
-        <li v-for="item in menu.forLogged" v-if="$root.isLogged"><router-link :to="item.link" v-html="item.html"></router-link></li>
-        <li v-for="item in menu.forLoggedOut" v-if="!$root.isLogged"><router-link :to="item.link" v-html="item.html"></router-link></li>
-      </ul>
-    </div>
+    <transition name="menu-toggle">
+      <div id="items" v-show="show">
+        <ul>
+          <li v-for="item in menu.forAll"><router-link :to="item.link" v-html="item.html"></router-link></li>
+          <li v-for="item in menu.forLogged" v-if="$root.isLogged"><router-link :to="item.link" v-html="item.html"></router-link></li>
+          <li v-for="item in menu.forLoggedOut" v-if="!$root.isLogged"><router-link :to="item.link" v-html="item.html"></router-link></li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -98,5 +100,15 @@
   }
   li > a {
     text-decoration: none;
+  }
+  .menu-toggle-enter-active {
+    transition: all .3s ease;
+  }
+  .menu-toggle-leave-active {
+    transition: all .3s ease;
+  }
+  .menu-toggle-enter, .menu-toggle-leave-to {
+    transform: translateY(-300px);
+    opacity: 0;
   }
 </style>

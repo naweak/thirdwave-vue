@@ -127,3 +127,6 @@ hr {
 #postInfo .post {
   padding: 0 !important;
 }
+body {
+  transition: .3s;
+}
