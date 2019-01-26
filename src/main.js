@@ -171,3 +171,21 @@ const app = new Vue({
   },
   render: h => h(App)
 })
+
+function onresize () {
+  var width = window.innerWidth
+  var body = document.getElementsByTagName('body')[0]
+  var menu = document.getElementById('menu')
+  var menuItems = $(menu).children('#items')[0]
+  if(width <= 1080) {
+    body.style.fontSize = "160%"
+    menuItems.style.width = "100%"
+  }
+  else {
+    body.style.fontSize = "100%"
+    menuItems.style.width = "250px"
+  }
+}
+
+window.onresize = onresize
+window.onresize()
