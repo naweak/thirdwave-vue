@@ -24,6 +24,7 @@ import Comments from './views/Comments.vue'
 import Comment from './Comment.vue'
 import CreateSubPage from './views/CreateSubPage.vue'
 import SubList from './views/SubList.vue'
+import Sandbox from './views/Sandbox.vue'
 
 window.Config = Config
 window.$ = $
@@ -131,6 +132,10 @@ const routes = [
   {
     path: "/subList",
     component: SubList
+  },
+  {
+    path: '/sandbox',
+    component: Sandbox
   }
 ]
 

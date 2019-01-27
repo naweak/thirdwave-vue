@@ -30,6 +30,10 @@
               html: "<i class=\"fa fa-list\"></i> Все разделы"
             },
             {
+              link: "/sandbox",
+              html: `<i class="fa fa-edit"></i> Песочница`
+            },
+            {
               link: "/logout",
               html: "<i class=\"fa fa-sign-out\"></i> Выйти"
             }
