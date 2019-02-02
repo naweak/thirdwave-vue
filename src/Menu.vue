@@ -34,6 +34,10 @@
               html: `<i class="fa fa-edit"></i> Песочница`
             },
             {
+              link: "/modlog",
+              html: `<i class="fa fa-book"></i> Журнал мочерации`
+            },
+            {
               link: "/logout",
               html: "<i class=\"fa fa-sign-out\"></i> Выйти"
             }

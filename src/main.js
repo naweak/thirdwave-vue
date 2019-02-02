@@ -25,6 +25,7 @@ import Comment from './Comment.vue'
 import CreateSubPage from './views/CreateSubPage.vue'
 import SubList from './views/SubList.vue'
 import Sandbox from './views/Sandbox.vue'
+import Modlog from './views/Modlog.vue'
 
 window.Config = Config
 window.$ = $
@@ -136,6 +137,10 @@ const routes = [
   {
     path: '/sandbox',
     component: Sandbox
+  },
+  {
+    path: "/modlog",
+    component: Modlog
   }
 ]
 
