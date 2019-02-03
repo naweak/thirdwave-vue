@@ -23,7 +23,8 @@
             <td class='postId'>{{entry.post_id}}</td>
             <td class='commentId'>{{entry.comment_id}}</td>
             <td class='sub'>{{entry.sub}}</td>
-            <td class='userModerated'>{{entry.datetime}}</td>
+            <td class='userModerated'>{{entry.user_moderated}}</td>
+            <td class='dateTime'>{{dateFormat(Number(entry.datetime) * 1000, $root.config.date)}}</td>
           </tr>
         </tbody>
       </table>

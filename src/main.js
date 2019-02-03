@@ -18,7 +18,6 @@ import Logout from './views/Logout.vue'
 import Register from './views/Register.vue'
 import VueProgressBar from 'vue-progressbar'
 import SubPage from './views/Sub.vue'
-import Moment from 'vue-moment'
 import Post from './Post.vue'
 import Comments from './views/Comments.vue'
 import Comment from './Comment.vue'
@@ -26,6 +25,7 @@ import CreateSubPage from './views/CreateSubPage.vue'
 import SubList from './views/SubList.vue'
 import Sandbox from './views/Sandbox.vue'
 import Modlog from './views/Modlog.vue'
+import dateFormat from 'dateformat'
 
 window.Config = Config
 window.$ = $
@@ -46,7 +46,6 @@ const options = {
   inverse: false
 }
 Vue.use(VueProgressBar, options)
-Vue.use(Moment)
 
 Vue.component('not-found', NotFound)
 Vue.component('error', Error)
@@ -57,6 +56,7 @@ Vue.component('forbidden', Forbidden)
 Vue.component('post', Post)
 Vue.component('comment', Comment)
 
+Vue.prototype.dateFormat = dateFormat
 Vue.prototype.$status = function(msg, type = "info", notHide = !1) {
   var icon;
   switch (type) {
