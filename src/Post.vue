@@ -5,7 +5,7 @@
     </div>
     <div class="text" v-html='post.post_text'></div>
     <div class="autograph">
-      <span class="username">{{post.author}}</span> написал этот псто {{Number(post['create_time']) * 1000 | moment($root.config.date)}}, <router-link :to="'/comments/' + post.id">#{{post.id}}</router-link>
+      <span class="username">{{post.author}}</span> написал этот псто {{dateFormat(Number(post['create_time']) * 1000, $root.config.date)}}, <router-link :to="'/comments/' + post.id">#{{post.id}}</router-link>
     </div>
   </div>
 </template>

@@ -5,7 +5,7 @@
       <div class="autograph">
         <span class="username">{{comment.author}}</span>
         написал этот псто
-        {{Number(comment['create_time']) * 1000 | moment($root.config.date)}},
+        {{dateFormat (Number(comment['create_time']) * 1000, $root.config.date)}},
         <a :href="'#comment-' + comment.id">#{{comment.id}}</a>
         <a href="javascript:void(0)" v-on:click="reply(comment.id, comment['parent_post'])">ответить</a>
       </div>
