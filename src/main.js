@@ -26,6 +26,8 @@ import SubList from './views/SubList.vue'
 import Sandbox from './views/Sandbox.vue'
 import Modlog from './views/Modlog.vue'
 import dateFormat from 'dateformat'
+import Firefox265 from './assets/firefox265.png'
+import FuckChrome from './views/FuckChrome.vue';
 
 window.Config = Config
 window.$ = $
@@ -141,6 +143,10 @@ const routes = [
   {
     path: "/modlog",
     component: Modlog
+  },
+  {
+    path: "/fuckChrome",
+    component: FuckChrome
   }
 ]
 

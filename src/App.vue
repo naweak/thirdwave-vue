@@ -31,6 +31,10 @@ export default {
     this.$router.afterEach((to, from) => {
       this.$Progress.finish()
     })
+    var chromeRegExp = new RegExp('chrome', 'ig')
+    if (chromeRegExp.test(window.navigator.userAgent)) {
+      this.$router.push('/fuckChrome')
+    }
   }
 }
 </script>
