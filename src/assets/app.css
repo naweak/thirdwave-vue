@@ -130,3 +130,11 @@ hr {
 body {
   transition: .3s;
 }
+.moderate {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.karma {
+  display: inline-block;
+  font-size:80%;
+}

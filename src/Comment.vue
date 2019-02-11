@@ -2,6 +2,12 @@
   <div class="comment" :id="'comment-' + comment.id">
     <div class="commentContent">
       <div class="text" v-html="comment['comment_text']"></div>
+      <div class="moderate" v-if="!hideModeration">
+        <karma
+          v-if="!hideKarma"
+          content-type="comment"
+          :content-id="comment.id"></karma>
+      </div>
       <div class="autograph">
         <span class="username">{{comment.author}}</span>
         написал этот псто
@@ -22,7 +28,7 @@
 <script>
 export default {
   name: "comment",
-  props: ['comment', 'loadChildren'],
+  props: ['comment', 'loadChildren', 'hideKarma', 'hideModeration'],
   methods: {
     reply (commentId, postId) {
       this.$root.$emit('reply', commentId, postId)

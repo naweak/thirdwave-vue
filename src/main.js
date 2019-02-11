@@ -27,7 +27,8 @@ import Sandbox from './views/Sandbox.vue'
 import Modlog from './views/Modlog.vue'
 import dateFormat from 'dateformat'
 import Firefox265 from './assets/firefox265.png'
-import FuckChrome from './views/FuckChrome.vue';
+import FuckChrome from './views/FuckChrome.vue'
+import Karma from './Karma.vue'
 
 window.Config = Config
 window.$ = $
@@ -57,6 +58,7 @@ Vue.component('status', Status)
 Vue.component('forbidden', Forbidden)
 Vue.component('post', Post)
 Vue.component('comment', Comment)
+Vue.component('karma', Karma)
 
 Vue.prototype.dateFormat = dateFormat
 Vue.prototype.$status = function(msg, type = "info", notHide = !1) {
