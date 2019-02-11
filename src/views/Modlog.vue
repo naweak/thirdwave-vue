@@ -54,7 +54,7 @@ export default {
         success (data) {
           if(data.success) {
             that.entries = data.success
-            this.$title("Провинности кровавой мочерации")
+            that.$title("Провинности кровавой мочерации")
           }
           else {
             vm.$status(data.error, 'error')
