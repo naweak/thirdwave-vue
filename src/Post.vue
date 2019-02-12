@@ -1,5 +1,5 @@
 <template>
-  <div :class="Number(post.is_invited) ? 'post gold' : 'post'">
+  <div :class="Number(post.is_invited) ? 'post gold' : 'post'" :id="'post-' + post.id">
     <div id="fromSub" v-if="showFromSub">
       <h2><router-link :to="'/sub/' + post.sub">{{ getSubTitle(post.sub) }}</router-link></h2>
     </div>
