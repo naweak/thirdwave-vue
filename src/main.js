@@ -157,6 +157,13 @@ const router = new VueRouter({
   mode: "history"
 })
 
+function setTitle (title) {
+  var titleEl = document.getElementsByTagName('title')[0]
+  titleEl.innerText = title
+}
+
+Vue.prototype.$title = setTitle
+
 const app = new Vue({
   router,
   el: "#app",
@@ -204,13 +211,6 @@ function onresize () {
     menuItems.style.width = "250px"
   }
 }
-
-function setTitle (title) {
-  var titleEl = document.getElementsByTagName('title')[0]
-  titleEl.innerText = title
-}
-
-Vue.prototype.$title = setTitle
 
 window.onresize = onresize
 window.onresize()
