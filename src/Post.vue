@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div :class="Number(post.is_invited) ? 'post gold' : 'post'">
     <div id="fromSub" v-if="showFromSub">
       <h2><router-link :to="'/sub/' + post.sub">{{ getSubTitle(post.sub) }}</router-link></h2>
     </div>
@@ -48,5 +48,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .gold .autograph {
+    background: #ffecb4;
+  }
 </style>
