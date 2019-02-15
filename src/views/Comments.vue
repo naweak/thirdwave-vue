@@ -115,7 +115,6 @@ export default {
         },
         success(data) {
           if(data.success) {
-            // $(`#comment-${that.replyToComment}`)
             that.commentText = ""
             that.loadComments()
             if(that.replyToComment != 0) {

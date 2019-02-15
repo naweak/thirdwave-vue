@@ -138,3 +138,18 @@ body {
   display: inline-block;
   font-size:80%;
 }
+.modButtons {
+  display: inline-block;
+}
+.modButtons button {
+  color: gray;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 1px;
+}
+.modButtons button:hover {
+  opacity: 1;
+}
+

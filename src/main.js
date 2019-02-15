@@ -29,6 +29,8 @@ import dateFormat from 'dateformat'
 import Firefox265 from './assets/firefox265.png'
 import FuckChrome from './views/FuckChrome.vue'
 import Karma from './Karma.vue'
+import PostVersions from './views/PostVersions.vue'
+import CommentVersions from './views/CommentVersions.vue'
 
 window.Config = Config
 window.$ = $
@@ -149,6 +151,14 @@ const routes = [
   {
     path: "/fuckChrome",
     component: FuckChrome
+  },
+  {
+    path: "/postVersions/:id",
+    component: PostVersions
+  },
+  {
+    path: "/commentVersions/:id",
+    component: CommentVersions
   }
 ]
 
