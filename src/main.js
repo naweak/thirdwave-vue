@@ -31,6 +31,7 @@ import FuckChrome from './views/FuckChrome.vue'
 import Karma from './Karma.vue'
 import PostVersions from './views/PostVersions.vue'
 import CommentVersions from './views/CommentVersions.vue'
+import Upload from './Upload.vue'
 
 window.Config = Config
 window.$ = $
@@ -61,6 +62,7 @@ Vue.component('forbidden', Forbidden)
 Vue.component('post', Post)
 Vue.component('comment', Comment)
 Vue.component('karma', Karma)
+Vue.component('upload', Upload)
 
 Vue.prototype.dateFormat = dateFormat
 Vue.prototype.$status = function(msg, type = "info", notHide = !1) {

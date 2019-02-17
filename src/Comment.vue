@@ -6,6 +6,10 @@
         <div class="formColumn">
           <textarea id="text" v-model="comment['raw_text']"></textarea>
         </div>
+        <details>
+          <summary>Загрузить фейл</summary>
+          <upload></upload>
+        </details>
         <div class="formColumn">
           <button type="submit">YARRR!</button>
         </div>

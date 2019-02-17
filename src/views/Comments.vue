@@ -24,6 +24,10 @@
           <p>Ваш шедевр:</p>
           <div><textarea cols="30" rows="10" v-model="commentText"></textarea></div>
         </div>
+        <details>
+          <summary>Загрузить фейл</summary>
+          <upload></upload>
+        </details>
         <div class="formColumn">
           <button type="submit">YARRR!</button>
         </div>

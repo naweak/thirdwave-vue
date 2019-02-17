@@ -10,6 +10,10 @@
       </div>
     </form>
     <div id="output" v-html="output"></div>
+    <details>
+      <summary>Загрузить фейл</summary>
+      <upload></upload>
+    </details>
   </div>
 </template>
 

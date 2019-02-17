@@ -8,6 +8,10 @@
       <div class="formColumn">
         <textarea id="editionText" v-model="post['raw_text']"></textarea>
       </div>
+      <details>
+        <summary>Загрузить фейл</summary>
+        <upload></upload>
+      </details>
       <div class="formColumn">
         <button type="submit">YARRR!</button>
       </div>

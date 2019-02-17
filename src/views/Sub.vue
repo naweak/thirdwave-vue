@@ -12,6 +12,10 @@
           <form v-on:submit.prevent="submitPost()">
             <p>Ваш шедевр:</p>
             <div class="formColumn"><textarea id="text" cols="30" rows="10" v-model="postText"></textarea></div>
+            <details>
+              <summary>Загрузить фейл</summary>
+              <upload></upload>
+            </details>
             <div><button type="submit">YARRR!</button></div>
           </form>
         </div>
