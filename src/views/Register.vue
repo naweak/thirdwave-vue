@@ -7,7 +7,7 @@
       <div class="formColumn"><label for="passwd">Пароль: <input type="password" id="passwd" v-model="passwd"></label></div>
       <div class="formColumn"><label for="passwd_verify">Подтверждение пароля: <input type="password" id="passwd_verify" v-model="passwd_verify"></label></div>
       <div class="formColumn"><label for="email">Мыло: <input type="text" id="email" v-model='email'></label></div>
-      <div class="formColumn"><label for="invite">Инвайт: <input type="text" id="invite" v-model='invite'></label></div>
+      <div class="formColumn"><label for="invite">Инвайт (необязательно): <input type="text" id="invite" v-model='invite'></label></div>
       <div class="formColumn"><button type="submit">YARRR!</button></div>
     </form>
   </div>
