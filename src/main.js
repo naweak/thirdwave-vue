@@ -32,6 +32,10 @@ import Karma from './Karma.vue'
 import PostVersions from './views/PostVersions.vue'
 import CommentVersions from './views/CommentVersions.vue'
 import Upload from './Upload.vue'
+import Manage from './views/Manage'
+import Ban from './Ban'
+import Moderator from './Moderator'
+import Reports from './Reports'
 
 window.Config = Config
 window.$ = $
@@ -63,6 +67,9 @@ Vue.component('post', Post)
 Vue.component('comment', Comment)
 Vue.component('karma', Karma)
 Vue.component('upload', Upload)
+Vue.component('ban', Ban)
+Vue.component('moderator', Moderator)
+Vue.component('reports', Reports)
 
 Vue.prototype.dateFormat = dateFormat
 Vue.prototype.$status = function(msg, type = "info", notHide = !1) {
@@ -161,6 +168,11 @@ const routes = [
   {
     path: "/commentVersions/:id",
     component: CommentVersions
+  },
+  {
+    path: '/manage/:sub?',
+    component: Manage,
+    name: 'manage'
   }
 ]
 

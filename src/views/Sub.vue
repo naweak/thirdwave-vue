@@ -1,7 +1,14 @@
 <template>
   <div id="sub" v-if="$root.isLogged">
     <div id="info">
-      <h2 id="name">{{sub.name}}</h2>
+      <h2 id="name">{{sub.name}}
+        <span class="presidentLink" v-if="sub['can_moderate']">
+          <sup>
+            <router-link
+              :to="{ name: 'manage', params: { sub: sub.address } }">Президентская лажа</router-link>
+          </sup>
+        </span>
+      </h2>
       <details>
         <summary>Описание</summary>
         <div id="description" v-html="sub.description"></div>
@@ -217,5 +224,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .presidentLink {
+    font-size: 60%;
+  }
 </style>

@@ -38,6 +38,10 @@
               html: `<i class="fa fa-book"></i> Журнал мочерации`
             },
             {
+              link: '/manage',
+              html: `<i class="fa fa-cog"></i> Панель охуевания`
+            },
+            {
               link: "/logout",
               html: "<i class=\"fa fa-sign-out\"></i> Выйти"
             }
